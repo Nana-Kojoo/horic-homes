@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-GH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties for Sale | Horic Homes</title>
+  <meta name="description" content="Browse land and houses for sale from Horic Homes in Greater Accra, Eastern, Central and Ashanti regions of Ghana.">
+  <meta name="theme-color" content="#173d30">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Horic Homes">
+  <meta property="og:title" content="Properties for Sale | Horic Homes">
+  <meta property="og:description" content="Browse land and houses for sale from Horic Homes in Greater Accra, Eastern, Central and Ashanti regions of Ghana.">
+  <meta property="og:locale" content="en_GH">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23173d30'/%3E%3Cpath d='M9 31V16l11-7 11 7v15M16 31v-8h8v8' stroke='%23fff' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <ul>
+        <li><a href="tel:+233548000393"><i class="fas fa-phone"></i>054 800 0393</a></li>
+        <li class="email"><a href="mailto:info@horichomes.com"><i class="fas fa-envelope"></i>info@horichomes.com</a></li>
+      </ul>
+      <ul>
+        <li class="hours"><i class="far fa-clock"></i>Mon–Fri 8:00–17:00 · Sat 9:00–14:00</li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrap">
+      <a href="index.html" class="brand" aria-label="Horic Homes home">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" fill="#173d30"/><path d="M9 31V16l11-7 11 7v15M16 31v-8h8v8" stroke="#fff" stroke-width="3" fill="none"/></svg>
+        <span><span class="brand-name">HORIC HOMES</span><span class="brand-sub">Land &amp; Real Estate</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="properties.html" class="active" aria-current="page">Properties</a>
+        <a href="about.html">About Us</a>
+        <a href="team.html">Our Team</a>
+        <a href="investors.html">Investors</a>
+        <a href="buying-guide.html">Buying Guide</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#visit" class="btn btn-primary">Book a Site Visit</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="banner">
+      <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=70&w=1600&auto=format&fit=crop" alt="">
+      <div class="wrap">
+        <ol class="crumbs"><li><a href="index.html">Home</a></li><li>Properties</li></ol>
+        <h1>Properties for sale</h1>
+        <p>Residential land, houses and apartments across Greater Accra, Eastern, Central and Ashanti regions. Every listing has been searched and documented.</p>
+      </div>
+    </section>
+
+    <section class="section-sm section-alt">
+      <div class="wrap">
+        <form class="filters" onsubmit="return false" aria-label="Filter properties">
+          <div class="field">
+            <label for="f-q">Location or keyword</label>
+            <input id="f-q" type="search" placeholder="e.g. Dodowa, Kasoa, HH-L101">
+          </div>
+          <div class="field">
+            <label for="f-type">Type</label>
+            <select id="f-type"><option value="">Any type</option><option>Land</option><option>House</option><option>Apartment</option></select>
+          </div>
+          <div class="field">
+            <label for="f-region">Region</label>
+            <select id="f-region"><option value="">All regions</option><option>Greater Accra</option><option>Eastern</option><option>Central</option><option>Ashanti</option></select>
+          </div>
+          <div class="field">
+            <label for="f-max">Max price</label>
+            <select id="f-max">
+              <option value="">No limit</option><option value="50000">GH₵ 50,000</option><option value="100000">GH₵ 100,000</option>
+              <option value="250000">GH₵ 250,000</option><option value="1000000">GH₵ 1,000,000</option><option value="2000000">GH₵ 2,000,000</option><option value="5000000">GH₵ 5,000,000</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-status">Status</label>
+            <select id="f-status"><option value="">Any status</option><option value="Available">Available</option><option value="Few plots left">Few plots left</option><option value="Coming soon">Coming soon</option><option value="Off-plan">Off-plan</option></select>
+          </div>
+        </form>
+        <div class="results-bar">
+          <strong id="count" aria-live="polite"></strong>
+          <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+            <label><input type="checkbox" id="f-hide" checked> Hide sold properties</label>
+            <label for="f-sort">Sort
+              <select id="f-sort"><option value="">Newest first</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option></select>
+            </label>
+            <button type="button" id="f-reset" class="link" style="background:none;border:0;cursor:pointer;font:inherit">Clear filters</button>
+          </div>
+        </div>
+        <div class="cards" id="results"></div>
+        <noscript><p>Please enable JavaScript to browse listings, or call us on 054 800 0393.</p></noscript>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap grid-2">
+        <div>
+          <span class="eyebrow">Can’t find what you need?</span>
+          <h2 style="font-size:clamp(26px,3vw,32px);margin-bottom:12px">Tell us what you are looking for</h2>
+          <p class="muted" style="margin-bottom:16px">New land is surveyed and documented before it is advertised. Registered buyers hear about new listings first, often at launch prices.</p>
+          <p class="muted">You can also <a class="link" href="contact.html?topic=Selling+or+partnering+on+my+land">offer your land to us</a> if you are a landowner.</p>
+        </div>
+        <form class="form-card flat js-wa-form" data-subject="Property request" novalidate>
+          <h3>Register your requirements</h3>
+          <p>We will contact you when a matching property becomes available.</p>
+          <div class="field-row">
+            <div class="field"><label for="r-name">Full name</label><input id="r-name" name="Name" required autocomplete="name"></div>
+            <div class="field"><label for="r-phone">Phone / WhatsApp</label><input id="r-phone" name="Phone" type="tel" placeholder="+233" required autocomplete="tel"></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="r-type">Looking for</label><select id="r-type" name="Looking for"><option>Land</option><option>House</option><option>Apartment</option></select></div>
+            <div class="field"><label for="r-budget">Budget (GH₵)</label><input id="r-budget" name="Budget" inputmode="numeric"></div>
+          </div>
+          <div class="field"><label for="r-area">Preferred areas</label><input id="r-area" name="Preferred areas" placeholder="e.g. Oyarifa, Aburi, Kasoa"></div>
+          <button class="btn btn-primary btn-block" type="submit">Register Requirements</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" fill="#24594a"/><path d="M9 31V16l11-7 11 7v15M16 31v-8h8v8" stroke="#fff" stroke-width="3" fill="none"/></svg>
+            <span><span class="brand-name">HORIC HOMES</span><span class="brand-sub">Land &amp; Real Estate</span></span>
+          </a>
+          <p>Documented land and homes across Greater Accra, Eastern, Central and Ashanti regions. A member of the Horic Group.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="team.html#careers">Careers</a></li>
+            <li><a href="investors.html">Investors &amp; Partners</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Buyers</h4>
+          <ul>
+            <li><a href="properties.html">All Properties</a></li>
+            <li><a href="properties.html?type=Land">Land for Sale</a></li>
+            <li><a href="properties.html?type=House">Houses for Sale</a></li>
+            <li><a href="buying-guide.html">Buying Guide &amp; FAQs</a></li>
+            <li><a href="contact.html?topic=Selling+or+partnering+on+my+land">Sell Your Land to Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>[Street address], [Town]</li>
+            <li><a href="tel:+233548000393">054 800 0393</a></li>
+            <li><a href="mailto:info@horichomes.com">info@horichomes.com</a></li>
+            <li>Mon–Fri 8:00–17:00 · Sat 9:00–14:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <div>© <span class="js-year">2026</span> Horic Homes Ltd. Registered in Ghana, company no. [CS000000000]. All rights reserved.</div>
+        <div><a href="privacy.html">Privacy Policy</a> · We only accept payments into our corporate bank account.</div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="wa-float js-wa-link" aria-label="Chat with Horic Homes on WhatsApp"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+
+  <script src="assets/js/properties.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

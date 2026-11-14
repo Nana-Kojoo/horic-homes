@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-GH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horic Homes | Land and Houses for Sale in Ghana</title>
+  <meta name="description" content="Horic Homes sells documented land and houses in Greater Accra, Eastern, Central and Ashanti regions. Registered titles, site inspections and instalment plans.">
+  <meta name="theme-color" content="#173d30">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Horic Homes">
+  <meta property="og:title" content="Horic Homes | Land and Houses for Sale in Ghana">
+  <meta property="og:description" content="Horic Homes sells documented land and houses in Greater Accra, Eastern, Central and Ashanti regions. Registered titles, site inspections and instalment plans.">
+  <meta property="og:locale" content="en_GH">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23173d30'/%3E%3Cpath d='M9 31V16l11-7 11 7v15M16 31v-8h8v8' stroke='%23fff' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <ul>
+        <li><a href="tel:+233548000393"><i class="fas fa-phone"></i>054 800 0393</a></li>
+        <li class="email"><a href="mailto:info@horichomes.com"><i class="fas fa-envelope"></i>info@horichomes.com</a></li>
+      </ul>
+      <ul>
+        <li class="hours"><i class="far fa-clock"></i>Mon–Fri 8:00–17:00 · Sat 9:00–14:00</li>
+      </ul>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrap">
+      <a href="index.html" class="brand" aria-label="Horic Homes home">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" fill="#173d30"/><path d="M9 31V16l11-7 11 7v15M16 31v-8h8v8" stroke="#fff" stroke-width="3" fill="none"/></svg>
+        <span><span class="brand-name">HORIC HOMES</span><span class="brand-sub">Land &amp; Real Estate</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="properties.html">Properties</a>
+        <a href="about.html">About Us</a>
+        <a href="team.html">Our Team</a>
+        <a href="investors.html">Investors</a>
+        <a href="buying-guide.html">Buying Guide</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#visit" class="btn btn-primary">Book a Site Visit</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Replace the hero image with a real photo or drone shot of one of your sites. -->
+    <section class="hero">
+      <img class="hero-img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=70&w=2000&auto=format&fit=crop" alt="" fetchpriority="high">
+      <div class="wrap">
+        <div>
+          <h1>Land and homes across Ghana, sold with proper documentation.</h1>
+          <p class="hero-lead">Horic Homes sells residential plots and houses in Greater Accra and the Eastern, Central and Ashanti regions. Every property is searched, surveyed and documented before we list it, and every sale is handled through our offices.</p>
+          <div class="hero-actions">
+            <a href="properties.html" class="btn btn-primary">Browse Properties</a>
+            <a href="contact.html#visit" class="btn btn-line">Book a Site Visit</a>
+          </div>
+          <div class="hero-facts">
+            <div><strong class="js-count-open">8</strong><span>Active listings</span></div>
+            <div><strong class="js-count-regions">4</strong><span>Regions</span></div>
+            <div><strong class="js-count-plots">177</strong><span>Plots available</span></div>
+          </div>
+        </div>
+
+        <form class="form-card search-card" action="properties.html" method="get">
+          <h2>Find a property</h2>
+          <div class="field">
+            <label for="s-q">Location or keyword</label>
+            <input id="s-q" name="q" type="text" placeholder="e.g. Dodowa, Kasoa, East Legon">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="s-type">Property type</label>
+              <select id="s-type" name="type">
+                <option value="">Any type</option>
+                <option>Land</option>
+                <option>House</option>
+                <option>Apartment</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="s-region">Region</label>
+              <select id="s-region" name="region">
+                <option value="">All regions</option>
+                <option>Greater Accra</option>
+                <option>Eastern</option>
+                <option>Central</option>
+                <option>Ashanti</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="s-max">Maximum budget</label>
+            <select id="s-max" name="max">
+              <option value="">No limit</option>
+              <option value="50000">GH₵ 50,000</option>
+              <option value="100000">GH₵ 100,000</option>
+              <option value="250000">GH₵ 250,000</option>
+              <option value="1000000">GH₵ 1,000,000</option>
+              <option value="2000000">GH₵ 2,000,000</option>
+              <option value="5000000">GH₵ 5,000,000</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-dark btn-block"><i class="fas fa-magnifying-glass"></i> Search Properties</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="assure" aria-label="Our standards">
+      <div class="wrap">
+        <div><h3>Lands Commission search</h3><p>Every property is searched before we list it.</p></div>
+        <div><h3>Licensed surveyors</h3><p>Site plans prepared and pillars demarcated.</p></div>
+        <div><h3>Documents in your name</h3><p>Indenture or sublease executed at completion.</p></div>
+        <div><h3>Official receipts</h3><p>Payments go only to our corporate account.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="head-row">
+          <div class="section-head">
+            <span class="eyebrow">Current Listings</span>
+            <h2>Featured properties</h2>
+            <p>Land and homes currently open for sale. Prices are in Ghana cedis and are confirmed at the time of your enquiry.</p>
+          </div>
+          <a href="properties.html" class="btn btn-line on-light">View All Properties</a>
+        </div>
+        <div class="cards" id="featured"></div>
+        <noscript><p>Please <a href="properties.html">view our properties page</a> or call 054 800 0393.</p></noscript>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Where We Operate</span>
+          <h2>Properties in four regions</h2>
+          <p>We focus on fast-growing residential areas within reach of Accra, Tema and Kumasi, and on established towns such as Aburi.</p>
+        </div>
+        <div class="locs" id="locations"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="head-row">
+          <div class="section-head">
+            <span class="eyebrow">Buying Process</span>
+            <h2>How buying with Horic Homes works</h2>
+            <p>The same documented process for every buyer, whether you are in Ghana or abroad.</p>
+          </div>
+          <a href="buying-guide.html" class="btn btn-line on-light">Read the Buying Guide</a>
+        </div>
+        <ol class="steps">
+          <li><h3>Enquiry &amp; site visit</h3><p>Speak to our sales team and inspect the property in person, or by video call if you are abroad.</p></li>
+          <li><h3>Document review</h3><p>We give you the site plan, search report and title documents. Your lawyer can review them independently.</p></li>
+          <li><h3>Agreement &amp; payment</h3><p>Sign a sale agreement and pay into our corporate account, outright or by instalment.</p></li>
+          <li><h3>Documentation &amp; handover</h3><p>Your indenture is prepared in your name, the plot is demarcated, and we support title registration.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section band">
+      <div class="wrap band-split">
+        <div>
+          <span class="eyebrow">Site Tours</span>
+          <h2 style="font-size:clamp(28px,3.4vw,36px);margin-bottom:14px">Free guided site tours every Saturday</h2>
+          <p style="margin-bottom:24px">Our sales team runs guided inspections of our Greater Accra and Eastern Region sites every Saturday morning. Book by Thursday to reserve a place. If you are abroad, we can arrange a live video inspection on WhatsApp.</p>
+          <div class="hero-actions" style="margin-bottom:0">
+            <a href="contact.html#visit" class="btn btn-primary">Book a Site Tour</a>
+            <a href="#" class="btn btn-line js-wa-link" data-text="Hello Horic Homes, I would like to arrange a video inspection of one of your properties."><i class="fab fa-whatsapp"></i> Request a Video Inspection</a>
+          </div>
+        </div>
+        <div class="band-list">
+          <article><h3>Greater Accra sites</h3><p>Dodowa, Prampram, East Legon Hills, Oyarifa and Tema.</p></article>
+          <article><h3>Eastern Region</h3><p>Aburi Hillside, on the Akuapem Ridge.</p></article>
+          <article><h3>Central and Ashanti regions</h3><p>Kasoa–Bawjiase and Ejisu tours by appointment on weekdays.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Buyer Resources</span>
+          <h2>Before you buy land in Ghana</h2>
+          <p>Practical guidance from our documentation team.</p>
+        </div>
+        <div class="grid-3">
+          <a class="guide" href="buying-guide.html#search"><span class="tagline">Due diligence</span><h3>How to conduct a search at the Lands Commission</h3><p>What a search report tells you, what you need to request one, and how long it takes.</p></a>
+          <a class="guide" href="buying-guide.html#documents"><span class="tagline">Documents</span><h3>Indenture, site plan and land title: what each one means</h3><p>The documents you should receive when you buy land, and which ones to keep safe.</p></a>
+          <a class="guide" href="buying-guide.html#abroad"><span class="tagline">Diaspora</span><h3>Buying property in Ghana from abroad</h3><p>Video inspections, power of attorney, and paying safely from outside Ghana.</p></a>
+        </div>
+        <div style="margin-top:40px">
+        <div class="notice" role="note">
+          <i class="fas fa-shield-halved" aria-hidden="true"></i>
+          <div>
+            <h3>Protect yourself from land fraud</h3>
+            <p>Horic Homes will never ask you to pay into a personal bank or mobile money account. All payments are made to our registered corporate account and confirmed in writing. If anyone asks you to pay elsewhere in our name, call our office on <a href="tel:+233548000393">054 800 0393</a> before you pay.</p>
+          </div>
+        </div>
+</div>
+      </div>
+    </section>
+
+    <section class="section-sm band">
+      <div class="wrap cta-row">
+        <div><h2>Looking for land or a home?</h2><p>Tell us what you need and our sales team will send you suitable options.</p></div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="contact.html" class="btn btn-primary">Speak to Our Team</a>
+          <a href="tel:+233548000393" class="btn btn-line"><i class="fas fa-phone"></i> 054 800 0393</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" fill="#24594a"/><path d="M9 31V16l11-7 11 7v15M16 31v-8h8v8" stroke="#fff" stroke-width="3" fill="none"/></svg>
+            <span><span class="brand-name">HORIC HOMES</span><span class="brand-sub">Land &amp; Real Estate</span></span>
+          </a>
+          <p>Documented land and homes across Greater Accra, Eastern, Central and Ashanti regions. A member of the Horic Group.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="team.html#careers">Careers</a></li>
+            <li><a href="investors.html">Investors &amp; Partners</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Buyers</h4>
+          <ul>
+            <li><a href="properties.html">All Properties</a></li>
+            <li><a href="properties.html?type=Land">Land for Sale</a></li>
+            <li><a href="properties.html?type=House">Houses for Sale</a></li>
+            <li><a href="buying-guide.html">Buying Guide &amp; FAQs</a></li>
+            <li><a href="contact.html?topic=Selling+or+partnering+on+my+land">Sell Your Land to Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>[Street address], [Town]</li>
+            <li><a href="tel:+233548000393">054 800 0393</a></li>
+            <li><a href="mailto:info@horichomes.com">info@horichomes.com</a></li>
+            <li>Mon–Fri 8:00–17:00 · Sat 9:00–14:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <div>© <span class="js-year">2026</span> Horic Homes Ltd. Registered in Ghana, company no. [CS000000000]. All rights reserved.</div>
+        <div><a href="privacy.html">Privacy Policy</a> · We only accept payments into our corporate bank account.</div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="wa-float js-wa-link" aria-label="Chat with Horic Homes on WhatsApp"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+
+  <script src="assets/js/properties.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
